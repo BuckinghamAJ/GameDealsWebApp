@@ -16,8 +16,7 @@ class XboxDealSpider():
         opts = Options()
         opts.headless = True
         assert opts.headless  # Operating in headless mode
-        #browser = Firefox(options=opts, executable_path="/usr/local/bin/geckodriver")
-        browser = Firefox(executable_path="/usr/local/bin/geckodriver")
+        browser = Firefox(options=opts, executable_path="/usr/local/bin/geckodriver")
 
         browser.get(self.url)
 
