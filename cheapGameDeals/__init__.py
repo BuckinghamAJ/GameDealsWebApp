@@ -5,7 +5,7 @@ import pymysql
 import json
 
 
-with open('/Users/adambuckingham/Text_Files/gameDealsConfig.json') as config_file:
+with open('.../gameDealsConfig.json') as config_file:
   config = json.load(config_file)
 
 
