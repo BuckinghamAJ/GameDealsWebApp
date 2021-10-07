@@ -1,0 +1,219 @@
+1588775132634	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/_2/tnt2tl691rgghdby3dg8cq5h0000gn/T/rust_mozprofile.hZeGG50zlPFw"
+*** You are running in headless mode.
+1588775133112	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1588775133385	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1588775133385	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1588775133385	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1588775133386	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1588775134954	Marionette	INFO	Listening on port 50565
+1588775135008	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://media.nintendo.com/share/nclood/stable/en-us/bundles/all.min.js, line 8: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://media.nintendo.com/share/nclood/stable/en-us/bundles/all.min.js, line 8: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://media.nintendo.com/share/nclood/stable/en-us/bundles/all.min.js, line 8: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://media.nintendo.com/share/nclood/stable/en-us/bundles/all.min.js, line 8: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://media.nintendo.com/share/nclood/stable/en-us/bundles/all.min.js, line 8: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://media.nintendo.com/share/nclood/stable/en-us/bundles/all.min.js, line 8: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://media.nintendo.com/share/nclood/stable/en-us/bundles/all.min.js, line 8: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://media.nintendo.com/share/nclood/stable/en-us/bundles/all.min.js, line 8: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1588775160200	Marionette	INFO	Stopped listening on port 50565
+1588951173775	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/_2/tnt2tl691rgghdby3dg8cq5h0000gn/T/rust_mozprofile.2Qkr6ESTcNor"
+*** You are running in headless mode.
+*** You are running in headless mode.
+1588951176286	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1588951176534	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1588951176534	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1588951176534	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1588951176534	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1588951178031	Marionette	INFO	Listening on port 50713
+1588951184308	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/_2/tnt2tl691rgghdby3dg8cq5h0000gn/T/rust_mozprofile.vJRchZTNkX4A"
+*** You are running in headless mode.
+1588951184611	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1588951184878	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1588951184878	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1588951184878	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1588951184878	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1588951186680	Marionette	INFO	Listening on port 50776
+1588951186781	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://assets.xbox.com/xbcservicewebwww-2005-04161-0-0-main-rolling/shell/js/adobeaudiencemanager.js, line 298: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://assets.xbox.com/xbcservicewebwww-2005-04161-0-0-main-rolling/shell/js/adobeaudiencemanager.js, line 298: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://assets.xbox.com/xbcservicewebwww-2005-04161-0-0-main-rolling/shell/js/adobeaudiencemanager.js, line 298: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://assets.xbox.com/xbcservicewebwww-2005-04161-0-0-main-rolling/shell/js/adobeaudiencemanager.js, line 298: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript error: https://cdnssl.clicktale.net/www/tc/crossdomainInclCEC.html?cookie=WRUIDCD03072018, line 36: SecurityError: The operation is insecure.
+JavaScript error: https://cdnssl.clicktale.net/www/tc/crossdomainInclCEC.html?cookie=WRUIDCD03072018, line 36: SecurityError: The operation is insecure.
+1588951220453	Marionette	INFO	Stopped listening on port 50776
+1588951458431	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/_2/tnt2tl691rgghdby3dg8cq5h0000gn/T/rust_mozprofile.K2MrrhJYgS7A"
+*** You are running in headless mode.
+1588951458846	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1588951459156	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1588951459156	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1588951459156	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1588951459156	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1588951461038	Marionette	INFO	Listening on port 51140
+1588951461170	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://media.nintendo.com/share/nclood/stable/en-us/bundles/all.min.js, line 8: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://media.nintendo.com/share/nclood/stable/en-us/bundles/all.min.js, line 8: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://media.nintendo.com/share/nclood/stable/en-us/bundles/all.min.js, line 8: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://media.nintendo.com/share/nclood/stable/en-us/bundles/all.min.js, line 8: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1588951848985	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/_2/tnt2tl691rgghdby3dg8cq5h0000gn/T/rust_mozprofile.O65WWWMilCJn"
+*** You are running in headless mode.
+1588951849354	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1588951849636	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1588951849636	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1588951849636	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1588951849636	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1588951851523	Marionette	INFO	Listening on port 51381
+1588951851576	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://media.nintendo.com/share/nclood/stable/en-us/bundles/all.min.js, line 8: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://media.nintendo.com/share/nclood/stable/en-us/bundles/all.min.js, line 8: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://media.nintendo.com/share/nclood/stable/en-us/bundles/all.min.js, line 8: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://media.nintendo.com/share/nclood/stable/en-us/bundles/all.min.js, line 8: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://media.nintendo.com/share/nclood/stable/en-us/bundles/all.min.js, line 8: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://media.nintendo.com/share/nclood/stable/en-us/bundles/all.min.js, line 8: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://media.nintendo.com/share/nclood/stable/en-us/bundles/all.min.js, line 8: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://media.nintendo.com/share/nclood/stable/en-us/bundles/all.min.js, line 8: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1588951907884	Marionette	INFO	Stopped listening on port 51381
+1588952048791	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/_2/tnt2tl691rgghdby3dg8cq5h0000gn/T/rust_mozprofile.GjQsr3qN2UGr"
+*** You are running in headless mode.
+1588952049154	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1588952049445	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1588952049446	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1588952049446	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1588952049446	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1588952051072	Marionette	INFO	Listening on port 51583
+1588952051169	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/NetworkGeolocationProvider.jsm, line 555: TypeError: xhr.response.location is undefined
+JavaScript warning: https://media.nintendo.com/share/nclood/stable/en-us/bundles/all.min.js, line 8: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://media.nintendo.com/share/nclood/stable/en-us/bundles/all.min.js, line 8: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://media.nintendo.com/share/nclood/stable/en-us/bundles/all.min.js, line 8: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://media.nintendo.com/share/nclood/stable/en-us/bundles/all.min.js, line 8: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://media.nintendo.com/share/nclood/stable/en-us/bundles/all.min.js, line 8: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://media.nintendo.com/share/nclood/stable/en-us/bundles/all.min.js, line 8: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://media.nintendo.com/share/nclood/stable/en-us/bundles/all.min.js, line 8: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://media.nintendo.com/share/nclood/stable/en-us/bundles/all.min.js, line 8: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1588952177990	Marionette	INFO	Stopped listening on port 51583
+1588952472725	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/_2/tnt2tl691rgghdby3dg8cq5h0000gn/T/rust_mozprofile.b5zRISHt7xRW"
+*** You are running in headless mode.
+1588952473345	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1588952473618	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1588952473618	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1588952473618	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1588952473618	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1588952475629	Marionette	INFO	Listening on port 51824
+1588952475754	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://media.nintendo.com/share/nclood/stable/en-us/bundles/all.min.js, line 8: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://media.nintendo.com/share/nclood/stable/en-us/bundles/all.min.js, line 8: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://media.nintendo.com/share/nclood/stable/en-us/bundles/all.min.js, line 8: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://media.nintendo.com/share/nclood/stable/en-us/bundles/all.min.js, line 8: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://media.nintendo.com/share/nclood/stable/en-us/bundles/all.min.js, line 8: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://media.nintendo.com/share/nclood/stable/en-us/bundles/all.min.js, line 8: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://media.nintendo.com/share/nclood/stable/en-us/bundles/all.min.js, line 8: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://media.nintendo.com/share/nclood/stable/en-us/bundles/all.min.js, line 8: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1588952556575	Marionette	INFO	Stopped listening on port 51824
+1589292064923	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/_2/tnt2tl691rgghdby3dg8cq5h0000gn/T/rust_mozprofile.h8G4ZsKUjQQA"
+*** You are running in headless mode.
+1589292065216	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1589292065464	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1589292065465	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1589292065465	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1589292065465	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1589292066918	Marionette	INFO	Listening on port 52588
+1589292066982	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/NetworkGeolocationProvider.jsm, line 555: TypeError: xhr.response.location is undefined
+JavaScript warning: https://media.nintendo.com/share/nclood/stable/en-us/bundles/all.min.js, line 8: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://media.nintendo.com/share/nclood/stable/en-us/bundles/all.min.js, line 8: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://media.nintendo.com/share/nclood/stable/en-us/bundles/all.min.js, line 8: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://media.nintendo.com/share/nclood/stable/en-us/bundles/all.min.js, line 8: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+1589292097043	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/_2/tnt2tl691rgghdby3dg8cq5h0000gn/T/rust_mozprofile.sY2p5zmTmL3S"
+1589292097484	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1589292097740	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1589292097740	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1589292097740	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1589292097740	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1589292099246	Marionette	INFO	Listening on port 52709
+1589292099321	Marionette	WARN	TLS certificate errors will be ignored for this session
+1589292156701	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/_2/tnt2tl691rgghdby3dg8cq5h0000gn/T/rust_mozprofile.WUautSHvyXfe"
+*** You are running in headless mode.
+1589292157008	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1589292157255	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1589292157255	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1589292157255	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1589292157255	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1589292158688	Marionette	INFO	Listening on port 52833
+1589292158755	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://media.nintendo.com/share/nclood/stable/en-us/bundles/all.min.js, line 8: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://media.nintendo.com/share/nclood/stable/en-us/bundles/all.min.js, line 8: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://media.nintendo.com/share/nclood/stable/en-us/bundles/all.min.js, line 8: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://media.nintendo.com/share/nclood/stable/en-us/bundles/all.min.js, line 8: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+JavaScript error: , line 0: uncaught exception: Object
+console.error: services.settings: 
+  Message: AbortError: IndexedDB: blocklists/addons getLastModified() IndexedDB:  execute() A request was aborted, for example through a call to IDBTransaction.abort.
+1589905647562	Marionette	INFO	Stopped listening on port 52709
+1594080773315	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/_2/tnt2tl691rgghdby3dg8cq5h0000gn/T/rust_mozprofile.KWZWyb0oJNhg"
+*** You are running in headless mode.
+1594080773639	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1594080773887	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1594080773887	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1594080773887	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1594080773887	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1594080775734	Marionette	INFO	Listening on port 52147
+1594080775858	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://assets.xbox.com/xbcservicewebwww-2005-04161-0-0-main-rolling/shell/js/adobeaudiencemanager.js, line 298: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://assets.xbox.com/xbcservicewebwww-2005-04161-0-0-main-rolling/shell/js/adobeaudiencemanager.js, line 298: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://assets.xbox.com/xbcservicewebwww-2005-04161-0-0-main-rolling/shell/js/adobeaudiencemanager.js, line 298: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://assets.xbox.com/xbcservicewebwww-2005-04161-0-0-main-rolling/shell/js/adobeaudiencemanager.js, line 298: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript error: https://cdnssl.clicktale.net/www/tc/crossdomainInclCEC.html?cookie=WRUIDCD03072018, line 36: SecurityError: The operation is insecure.
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+1594080811676	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/_2/tnt2tl691rgghdby3dg8cq5h0000gn/T/rust_mozprofile.oVe39OiJF4RE"
+1594080812061	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1594080812326	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1594080812326	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1594080812326	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1594080812326	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1594080813862	Marionette	INFO	Listening on port 52295
+1594080813878	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnssl.clicktale.net/www/tc/crossdomainInclCEC.html?cookie=WRUIDCD03072018, line 36: SecurityError: The operation is insecure.
+1594080849376	Marionette	INFO	Stopped listening on port 52295

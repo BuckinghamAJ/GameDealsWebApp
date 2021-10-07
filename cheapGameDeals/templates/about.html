@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="About">
+
+
+    <h2>What is this website?</h2>
+
+    <p>Hello, fellow gamers, you might be wondering what this website is. As of right now, it is just a simple website providing the users with all the current digital console gaming deals. That's it; you can scroll down to view all the possible deals online currently and filter by the console.</p>
+
+    <h2>Why was this made?</h2>
+    <p>Video games have always been an escape for me whenever something stressful was going on in my life. I would always resort to them when I needed to escape/forget about my problems. They are the digital form of comfort food. However, this comfort food can be expensive with how many new titles come out each month. People miss out on a lot of games in the month a popular game is released.</p>
+
+    <p>Fortunately, you can be like me and see that as a positive thing, because as time goes on, the video games we missed out on become cheaper and cheaper. That is when I strike and make a purchase. With this method of the mind-blowing task of just waiting, I have saved at least hundreds of dollars.</p>
+
+    <p>I made this website because I personally love scrolling through websites looking at different deals of all the various video games out there. I love picturing the possibilities of playing these games at a HUGE discount! I love video games, I love finding deals, and this website is just an amalgamation of what I enjoy.</p>
+    <p>It will display all the digital video game deals out there for the different consoles. I will continue making improvements to it over time.</p>
+
+    <p>I hope you all enjoy it as much as I do!</p>
+
+
+    <h2>Plan Going Forward:</h2>
+    <p>I want to receive feedback from everyone who uses the website, because I want to constantly improve. </p>
+
+    <p>Feel free to email me at <a href="mailTo:BuckinghamApps@gmail.com">BuckinghamApps@gmail.com</a>. I'm a pretty easy going guy so don't be afraid to reach out!</p>
+
+    <div style="text-align: center;">
+        <div class="row AboutMe">
+            <div class="col-md AboutCol" style="width= 50%">
+              <img src="{{ url_for('static', filename='Thats_Me.jpg') }}" alt="Me"  style="max-width: 100%;" title="Adam in Italy">
+            </div>
+
+            <div class="col-md AboutCol" style="width= 50%">
+              <h1 align="center"><b style="color: white;">SOCIAL</b> <b style="color: black;">MEDIA</b></h1>
+              <div class="AboutMeMessage">
+                <p><b>Twitter: </b><a href="https://twitter.com/The_CheapEscape">@The_CheapEscape</a></p>
+                <br>
+                  <p><b>Instagram: </b><a href="https://www.instagram.com/adamjbuckingham/">AdamJBuckingham</a></p>
+                <br>
+
+              </div>
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock content %}

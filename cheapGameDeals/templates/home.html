@@ -1,0 +1,171 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" width="100%">
+        <div class="centered" style="color: #F0FAFF">
+          <h3 class="font_3" style="line-height:1.3em;"><span>The&nbsp;</span></h3>
+
+          <h3 class="font_3" style="line-height:1.3em;"><span>Cheap</span></h3>
+
+          <h3 class="font_3" style="line-height:1.3em;"><span>Escape</span></h3>
+          <hr style="border-color: white; width:500px;">
+            <h4 class="color_11"><span>Providing Current Video Game Deals.
+              </span></h4>
+        </div>
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+
+            <img class="frontPageImage" src="{{ url_for('static', filename='background_control.jpg') }}" class="d-block w-100" alt="Playstation Controller Background for Video Game Deals">
+          </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid topDeals" id="topDeals">
+        <h1 class="webTextFont" style="padding-top: 5%; font-size: 3rem;"><b style="color: #7E685A;">Top 6 Money Saving Deals</b></h1>
+        <div class="row row-cols-1 row-cols-md-2" >
+            {% for deal in homePageDeals %}
+                <!--Horizontal Card -->
+                <div class="card mb-3 GameDeals">
+                  <div class="row no-gutters">
+                    <div class="col-md-4">
+                      <img src="{{deal.imageURL}}" class="card-img gameImage" alt="{{deal.title}} Discount Deal">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">{{deal.title}}</h5>
+                          {% if deal.PS_link != 'NULL' %}
+                            <a target="_blank" rel="noopener noreferrer" href="{{deal.PS_link}}" >
+                                <p class="card-text Playstation_Deal"><img src="{{url_for('static', filename='PlayStation_logo.svg') }}" class="logoSizing" alt="{{deal.title}} Playstation Deal"><s>${{'%0.2f' % deal.PS_normal_price}}</s><strong>${{'%0.2f' % deal.PS_deal_price}}</strong></p>
+                            </a>
+                          {% endif %}
+
+                          {% if deal.Xbox_link != 'NULL' %}
+                            <a target="_blank" rel="noopener noreferrer" href="{{deal.Xbox_link}}">
+                                <p class="card-text Xbox_Deal" style="margin-top: 4%"><img src="{{url_for('static', filename='Xbox_one_logo.svg') }}" class="logoSizing" alt="{{deal.title}} Xbox Deal"><s>${{'%0.2f' % deal.Xbox_normal_price}}</s><strong>${{'%0.2f' % deal.Xbox_deal_price}}</strong></p>
+                            </a>
+                          {% endif %}
+
+                          {% if deal.Switch_link != 'NULL' %}
+                            <a target="_blank" rel="noopener noreferrer" href="{{deal.Switch_link}}">
+                                <p class="card-text Switch_Deal" style="margin-top: 4%"><img src="{{url_for('static', filename='Nintendo_Switch_Logo.svg') }}" class="logoSizing" alt="{{deal.title}} Nintendo Switch Deal"><s>${{'%0.2f' % deal.Switch_normal_price}}</s><strong>${{'%0.2f' % deal.Switch_deal_price}}</strong></p>
+                            </a>
+                          {% endif %}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            {% endfor %}
+            </div>
+    </div>
+
+
+
+
+    <div style="text-align: center;">
+          <button type="button" class="btn btn-light btn-lg" onclick="showAllDeals()" id="revealButton">See All Deals!</button>
+    </div>
+
+
+    <div class ="row" id="homeGameDeals">
+
+        <div class="col-lg filterDiv" >
+            <h4><u>Filter By Console</u></h4>
+            <div class ="filter">
+                <form>
+                    <label class="container"><img src="{{url_for('static', filename='PlayStation_logo.svg') }}" style="width: 31px;">
+                      <input type="checkbox" onclick="filterByConsole()" id="Playstation_Check">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container"><img src="{{url_for('static', filename='Xbox_one_logo.svg') }}" style="width: 31px;">
+                      <input type="checkbox" onclick="filterByConsole()" id="Xbox_Check">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container"><img src="{{url_for('static', filename='Nintendo_Switch_Logo.svg') }}" style="width: 31px;">
+                      <input type="checkbox" onclick="filterByConsole()" id="Switch_Check">
+                      <span class="checkmark"></span>
+                    </label>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="col-md gameCol">
+                <div class="input-group mb-3">
+                    <input type="text" placeholder="Search For A Title..." id="titleSearch" onkeyup="filterTitleFunction()" autocomplete="off" onkeydown="if (event.keyCode == 13) {return false;}">
+                </div>
+                <div class="row row-cols-1 row-cols-md-2" >
+                {% for deal in gameDeals %}
+                    <!--Horizontal Card -->
+                    <div class="card mb-3 GameDeals">
+                      <div class="row no-gutters">
+                        <div class="col-md-4">
+                          <img src="{{deal.imageURL}}" class="card-img gameImage" alt="{{deal.title}} Deal">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">{{deal.title}}</h5>
+                              {% if deal.PS_link != 'NULL' %}
+                                <a target="_blank" rel="noopener noreferrer" href="{{deal.PS_link}}" >
+                                    <p class="card-text Playstation_Deal"><img src="{{url_for('static', filename='PlayStation_logo.svg') }}" class="logoSizing" alt="{{deal.title}} Playstation Deal"><s>${{'%0.2f' % deal.PS_normal_price}}</s><strong>${{'%0.2f' % deal.PS_deal_price}}</strong></p>
+                                </a>
+                                {% set PS_deal = "PS4: $%0.2f -> $%0.2f%%0D%%0A" % (deal.PS_normal_price, deal.PS_deal_price) %}
+                              {% endif %}
+
+                              {% if deal.Xbox_link != 'NULL' %}
+                                <a target="_blank" rel="noopener noreferrer" href="{{deal.Xbox_link}}">
+                                    <p class="card-text Xbox_Deal" style="margin-top: 4%"><img src="{{url_for('static', filename='Xbox_one_logo.svg') }}" class="logoSizing" alt="{{deal.title}} Xbox Deal"><s>${{'%0.2f' % deal.Xbox_normal_price}}</s><strong>${{'%0.2f' % deal.Xbox_deal_price}}</strong></p>
+                                </a>
+                                {% set Xbox_deal = "Xbox: $%0.2f -> $%0.2f%%0D%%0A" % (deal.Xbox_normal_price, deal.Xbox_deal_price) %}
+                              {% endif %}
+
+                              {% if deal.Switch_link != 'NULL' %}
+                                <a target="_blank" rel="noopener noreferrer" href="{{deal.Switch_link}}">
+                                    <p class="card-text Switch_Deal" style="margin-top: 4%"><img src="{{url_for('static', filename='Nintendo_Switch_Logo.svg') }}" class="logoSizing" alt="{{deal.title}} Nintendo Switch Deal"><s>${{'%0.2f' % deal.Switch_normal_price}}</s><strong>${{'%0.2f' % deal.Switch_deal_price}}</strong></p>
+                                </a>
+                                {% set Switch_deal = "Switch: $%0.2f -> $%0.2f%%0D%%0A" % (deal.Switch_normal_price, deal.Switch_deal_price) %}
+
+                              {% endif %}
+
+                                {% if PS_deal and Xbox_deal and Switch_deal %}
+                                    {% set deal_string = PS_deal ~ Xbox_deal ~ Switch_deal %}
+
+                                {% elif Xbox_deal and Switch_deal and PS_deal|length == 0 %}
+                                    {% set deal_string = Xbox_deal ~ Switch_deal %}
+
+                                {% elif Xbox_deal and PS_deal and Switch_deal|length == 0 %}
+                                    {% set deal_string = Xbox_deal ~ PS_deal %}
+
+                                {% elif PS_deal and Switch_deal and Xbox_deal|length == 0 %}
+                                    {% set deal_string = PS_deal ~ Switch_deal %}
+
+                                {% elif PS_deal and Switch_deal|length == 0  and Xbox_deal|length == 0 %}
+                                    {% set deal_string = PS_deal %}
+                                {% elif Xbox_deal|length == 0  and Switch_deal and PS_deal|length == 0 %}
+                                    {% set deal_string = Switch_deal %}
+                                {% elif PS_deal|length == 0 and Switch_deal|length == 0  and Xbox_deal %}
+                                    {% set deal_string = Xbox_deal %}
+                                {% endif %}
+
+
+
+                              <!--
+                              <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Look at this great deal I found on for '{{deal.title}}' on TheCheapEscape.com" data-via="The_CheapEscape" data-lang="en" data-show-count="false">Share</a>
+                               -->
+                            <div class="ShareThis">
+                                <a href="https://twitter.com/intent/tweet?url=TheCheapEscape.com&text=Look at the deal(s) for '{{deal.title}}' that I found on TheCheapEscape.com%0D%0A{{deal_string}} &via=The_CheapEscape" target="_blank"><img src="{{url_for('static', filename='Twitter_Social_Icon.svg')}}"></a>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                {% endfor %}
+                </div>
+            </div>
+
+    </div>
+
+
+{% endblock content %}

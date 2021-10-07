@@ -1,0 +1,93 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" width="100%">
+        <div class="centered" style="color: #F0FAFF">
+          <h3 class="font_3" style="line-height:1.3em;"><span>The&nbsp;</span></h3>
+
+          <h3 class="font_3" style="line-height:1.3em;"><span>Cheap</span></h3>
+
+          <h3 class="font_3" style="line-height:1.3em;"><span>Escape</span></h3>
+          <hr style="border-color: white; width:500px;">
+            <h4 class="color_11"><span>Providing Current Video Game Deals.
+              </span></h4>
+        </div>
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+
+            <img class="frontPageImage" src="{{ url_for('static', filename='background_control.jpg') }}" class="d-block w-100" alt="Playstation Controller">
+          </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid topDeals">
+        <h1 class="webTextFont" style="padding-top: 5%; font-size: 3rem;"><b style="color: #7E685A;">Top 6 Money Saving Deals</b></h1>
+        <div class="row row-cols-1 row-cols-md-2" >
+            {% for deal in homePageDeals %}
+                <!--Horizontal Card -->
+                <div class="card mb-3 GameDeals">
+                  <div class="row no-gutters">
+                    <div class="col-md-4">
+                      <img src="{{deal.imageURL}}" class="card-img gameImage" alt="{{deal.title}} Deal">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">{{deal.title}}</h5>
+                          {% if deal.PS_link != 'NULL' %}
+                            <a target="_blank" rel="noopener noreferrer" href="{{deal.PS_link}}" >
+                                <p class="card-text Playstation_Deal"><img src="{{url_for('static', filename='PlayStation_logo.svg') }}" class="logoSizing"><s>${{'%0.2f' % deal.PS_normal_price}}</s><strong>${{'%0.2f' % deal.PS_deal_price}}</strong></p>
+                            </a>
+                          {% endif %}
+
+                          {% if deal.Xbox_link != 'NULL' %}
+                            <a target="_blank" rel="noopener noreferrer" href="{{deal.Xbox_link}}">
+                                <p class="card-text Xbox_Deal" style="margin-top: 4%"><img src="{{url_for('static', filename='Xbox_one_logo.svg') }}" class="logoSizing"><s>${{'%0.2f' % deal.Xbox_normal_price}}</s><strong>${{'%0.2f' % deal.Xbox_deal_price}}</strong></p>
+                            </a>
+                          {% endif %}
+
+                          {% if deal.Switch_link != 'NULL' %}
+                            <a target="_blank" rel="noopener noreferrer" href="{{deal.Switch_link}}">
+                                <p class="card-text Switch_Deal" style="margin-top: 4%"><img src="{{url_for('static', filename='Nintendo_Switch_Logo.svg') }}" class="logoSizing"><s>${{'%0.2f' % deal.Switch_normal_price}}</s><strong>${{'%0.2f' % deal.Switch_deal_price}}</strong></p>
+                            </a>
+                          {% endif %}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            {% endfor %}
+            </div>
+    </div>
+
+    <div style="text-align: center;">
+          <button type="button" class="btn btn-light" onclick="window.location.href = '{{url_for('deals')}}';">See All Deals!</button>
+    </div>
+
+    <div class="row AboutMe">
+        <div class="col-md AboutCol" style="width= 50%">
+          <img src="{{ url_for('static', filename='Thats_Me.jpg') }}" class="d-block w-100" alt="Me" style="min-width: 100%; height: 100%;" title="Adam in Italy">
+        </div>
+
+        <div class="col-md AboutCol" style="width= 50%">
+          <h1 align="center"><b style="color: white; font-size: 52px;">ABOUT</b> <b style="color: black; font-size: 52px;">ME</b></h1>
+          <div class="AboutMeMessage">
+            <p>Hello Gamers,</p>
+            <br>
+            <p>That's me to left, and you may be wondering what is the purpose of this website. Well in brief, I made this website because I love video games and I LOVE getting them at a discount.</p>
+            <br>
+            <p>This website will display all the digital video game deals out there for the different consoles. I created this website in my spare time for fun, and will continue making improvements to it overtime.</p>
+            <br>
+              <p>I want everyone to get value out of this website. Please contact me for anything.</p>
+              <br>
+            <p>Have fun gaming,</p>
+            <p>Adam</p>
+            <div style="text-align: center;">
+              <button type="button" class="btn btn-light" onclick="window.location.href = '{{url_for('about')}}';">Learn More</button>
+            </div>
+          </div>
+        </div>
+  </div>
+
+
+{% endblock content %}

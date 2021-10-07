@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.pageContentWrapper{
+    margin-bottom : auto;
+    width: 100%;
+    overflow-x: hidden;
+    margin-top: 5%;
+}
+
+.GameDeals {
+    width: 35%;
+    margin-right: 2%;
+}
+
+
+.gameCol {
+    margin-left: 25%;
+    min-width: 90%;
+}
+
+.webTextFont {
+    font-family: 'Roboto', sans-serif;
+}
+
+.filter {
+    width:10%
+
+}
+
+.logoSizing {
+    width: 10%;
+    margin-right: 4%;
+}
+
+.gameImage {
+    width: 100px;
+    height:150px;
+}
+
+s {
+  margin-right: 2%;
+}
+
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.About{
+   padding-left: 5%;
+   padding-right: 5%;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.filterDiv {
+    position: absolute;
+    width: 25%;
+}
+
+#homeGameDeals{
+    display: none;
+    margin-top: 4em;
+}
+
+#titleSearch {
+    margin-bottom: 1%;
+    margin-left: 20%;
+    width: 35%;
+}
+
+.color_11{
+    color: #F0FAFF;
+    font-weight:bold;
+    font: normal normal bold 10px;
+}
+
+.centered{
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-70%, -57%);
+  z-index: 1;
+}
+
+.AboutCol{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.AboutMe {
+    max-width: 60%;
+    background-color: #AFD275;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 5px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.AboutMeMessage{
+    padding: 40px;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+}
+
+.topDeals {
+    margin-left: 15%;
+}
+
+.navbar{
+    z-index: 2;
+    position: fixed;
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    height: 70px;
+    background: white;
+}
+
+.frontPageImage{
+    transform: scaleX(-1);
+    width: 100%;
+}
+
+#revealButton {
+    background-color: #AFD275;
+    color: white;
+    font-size: 1.8em;
+}
+
+.ShareThis {
+    position: absolute;
+    right: 4%;
+    bottom: 3%;
+    width: 10%;
+}
+
+@media only screen and (max-width: 479px) {
+    .gameCol {
+        min-width: 95%;
+        margin-top: 25%;
+        margin-left: 5%;
+    }
+
+    .logoSizing {
+        width: 15%;
+        margin-right: 10%;
+    }
+
+    .card-title {
+        font-size: 0.7rem;
+    }
+
+    .card-body {
+        font-size: 55%;
+        padding: 0.6rem;
+    }
+
+    .row {
+        margin-left: 0;
+        margin-right: -5%
+
+    }
+
+    .GameDeals {
+        width: 100px;
+        margin-right: 2%;
+    }
+
+    .filterDiv {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+    }
+
+    .filter{
+        display: inline;
+    }
+
+    .container {
+        display: inline;
+
+    }
+
+    #titleSearch {
+      margin-bottom: 1%;
+      margin-left: 15%;
+      width: 60%;
+      text-align:center;
+  }
+
+  .font_3{font: normal normal bold 16px/1.0em raleway,sans-serif ;}
+
+    .color_11{
+    color: #F0FAFF;
+    font-weight:bold;
+    font-size: 9px;
+
+    }
+
+
+
+
+    .carousel-inner{
+        width:100%;
+        height: 140px !important;
+    }
+
+    .centered {
+        position: absolute;
+        top: 55%;
+        left: 74%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+
+    }
+
+    .pageContentWrapper {
+        margin-top: 20%;
+    }
+    .navbar-collapse{
+        background: white;
+    }
+
+
+    .topDeals {
+        margin-left: 8%;
+    }
+
+    .row {
+        margin-left: 0;
+        margin-right: -5%;
+        height: 100%;
+    }
+
+
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1223px) {
+    .font_3{font: normal normal bold 45px/1.0em raleway,sans-serif ;}
+
+    .color_11{
+    color: #F0FAFF;
+    font-weight:bold;
+    font-size: 20px;
+
+    }
+
+    .flightinfo{
+        font-size: 1.4em;
+    }
+
+    .pageContentWrapper {
+        margin-top: 10%;
+    }
+
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .font_3{font: normal normal bold 40px/1.0em raleway,sans-serif ;}
+
+    .color_11{
+    color: #F0FAFF;
+    font-weight:bold;
+    font-size: 18px;
+
+    }
+
+    .flightinfo{
+        font-size: 1.2em;
+    }
+
+    .pageContentWrapper {
+        margin-top: 15%;
+    }
+
+    .centered {
+        transform: translate(-60%, -57%);
+    }
+
+    .gameCol {
+        margin-left: 25%;
+        min-width: 100%;
+    }
+
+    .filterDiv {
+      margin-left: 2px;
+      width: auto;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+
+}
+
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+    .font_3{font: normal normal bold 25px/1.0em raleway,sans-serif ;}
+
+    .color_11{
+    color: #F0FAFF;
+    font-weight:bold;
+    font-size: 14px;
+
+    }
+
+    .flightinfo{
+        font-size: 1em;
+        display: flex;
+    }
+
+    .centered {
+
+        position: absolute;
+        top: 55%;
+        left: 52%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+
+    }
+
+    .col-lg #myInput {
+      min-width: 100%;
+    }
+
+    .col-sm.HomeAirports{
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .pageContentWrapper {
+        margin-top: 15%;
+    }
+
+    .navbar-collapse{
+        background: white;
+    }
+
+    .card-body {
+        font-size: 45%;
+        padding: 0.6rem;
+    }
+
+}
+
+@media only screen and (min-width: 1224px){
+
+   .font_3{font: normal normal bold 52px/1.0em raleway,sans-serif ;}
+
+    .color_11{
+    color: #F0FAFF;
+    font-weight:bold;
+    font-size: 22px;
+    }
+
+    .flightinfo{
+        font-size: 1.6em;
+    }
+
+    .frontPageImage {
+        height: 30em;
+    }
+
+    .pageContentWrapper {
+        margin-top: 6%;
+    }
+
+}
+
+
+@media only screen and (max-width: 375px) {
+    .gameCol {
+        min-width: 95%;
+        margin-top: 25%;
+        margin-left: 5%;
+    }
+
+    .logoSizing {
+        width: 15%;
+        margin-right: 10%;
+    }
+
+    .card-title {
+        font-size: 0.7rem;
+    }
+
+    .card-body {
+        font-size: 45%;
+        padding: 0.6rem;
+    }
+
+    .row {
+        margin-left: 0;
+        margin-right: -5%;
+        height: 100%;
+        position: relative;
+    }
+
+    .GameDeals {
+        width: 100px;
+        margin-right: 2%;
+    }
+
+    .filterDiv {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+    }
+
+    .filter{
+        display: inline;
+    }
+
+    .container {
+        display: inline;
+
+    }
+
+    #titleSearch {
+        margin-bottom: 1%;
+        margin-left: 15%;
+        width: 60%;
+        text-align: center;
+        position: relative;
+  }
+
+  .font_3{font: normal normal bold 16px/1.0em raleway,sans-serif ;}
+
+    .color_11{
+    color: #F0FAFF;
+    font-weight:bold;
+    font-size: 9px;
+
+    }
+
+
+    .carousel-inner{
+        width:100%;
+        height: 140px !important;
+    }
+
+    .centered {
+        position: absolute;
+        top: 55%;
+        left: 74%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+
+    }
+
+    .pageContentWrapper {
+        margin-top: 20%;
+    }
+    .navbar-collapse{
+        background: white;
+    }
+
+
+    .topDeals {
+        margin-left: 5%;
+    }
+
+
+}
+
+

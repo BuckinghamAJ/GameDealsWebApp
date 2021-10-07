@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+
+    <div class ="row">
+
+        <div class="col-lg filterDiv" >
+            <h4><u>Filter By Console</u></h4>
+            <div class ="filter">
+                <form>
+                    <label class="container"><img src="{{url_for('static', filename='PlayStation_logo.svg') }}" style="width: 31px;">
+                      <input type="checkbox" onclick="filterByConsole()" id="Playstation_Check">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container"><img src="{{url_for('static', filename='Xbox_one_logo.svg') }}" style="width: 31px;">
+                      <input type="checkbox" onclick="filterByConsole()" id="Xbox_Check">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container"><img src="{{url_for('static', filename='Nintendo_Switch_Logo.svg') }}" style="width: 31px;">
+                      <input type="checkbox" onclick="filterByConsole()" id="Switch_Check">
+                      <span class="checkmark"></span>
+                    </label>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="col-md gameCol">
+                <div class="input-group mb-3">
+                    <input type="text" placeholder="Search For A Title..." id="titleSearch" onkeyup="filterTitleFunction()" autocomplete="off" onkeydown="if (event.keyCode == 13) {return false;}">
+                </div>
+                <div class="row row-cols-1 row-cols-md-2" >
+                {% for deal in gameDeals %}
+                    <!--Horizontal Card -->
+                    <div class="card mb-3 GameDeals">
+                      <div class="row no-gutters">
+                        <div class="col-md-4">
+                          <img src="{{deal.imageURL}}" class="card-img gameImage" alt="{{deal.title}} Deal">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">{{deal.title}}</h5>
+                              {% if deal.PS_link != 'NULL' %}
+                                <a target="_blank" rel="noopener noreferrer" href="{{deal.PS_link}}" >
+                                    <p class="card-text Playstation_Deal"><img src="{{url_for('static', filename='PlayStation_logo.svg') }}" class="logoSizing"><s>${{'%0.2f' % deal.PS_normal_price}}</s><strong>${{'%0.2f' % deal.PS_deal_price}}</strong></p>
+                                </a>
+                              {% endif %}
+
+                              {% if deal.Xbox_link != 'NULL' %}
+                                <a target="_blank" rel="noopener noreferrer" href="{{deal.Xbox_link}}">
+                                    <p class="card-text Xbox_Deal" style="margin-top: 4%"><img src="{{url_for('static', filename='Xbox_one_logo.svg') }}" class="logoSizing"><s>${{'%0.2f' % deal.Xbox_normal_price}}</s><strong>${{'%0.2f' % deal.Xbox_deal_price}}</strong></p>
+                                </a>
+                              {% endif %}
+
+                              {% if deal.Switch_link != 'NULL' %}
+                                <a target="_blank" rel="noopener noreferrer" href="{{deal.Switch_link}}">
+                                    <p class="card-text Switch_Deal" style="margin-top: 4%"><img src="{{url_for('static', filename='Nintendo_Switch_Logo.svg') }}" class="logoSizing"><s>${{'%0.2f' % deal.Switch_normal_price}}</s><strong>${{'%0.2f' % deal.Switch_deal_price}}</strong></p>
+                                </a>
+                              {% endif %}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                {% endfor %}
+                </div>
+            </div>
+
+    </div>
+
+
+{% endblock content %}
