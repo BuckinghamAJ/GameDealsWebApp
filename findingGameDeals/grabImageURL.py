@@ -5,7 +5,6 @@ from scrapy.crawler import CrawlerProcess
 
 def main():
     allDealsInDatabase = getAllDealsStored()
-    print(allDealsInDatabase)
 
     callMetaCriticImageSpider(allDealsInDatabase)
 
@@ -14,7 +13,7 @@ def getAllDealsStored():
 
     connection = pymysql.connect(host='localhost',
                                  user='root',
-                                 password='22ehH0C2!View2011!',
+                                 password='Password1',
                                  db='Game_Deals',
                                  charset='utf8mb4',
                                  cursorclass=pymysql.cursors.DictCursor)
@@ -36,16 +35,14 @@ def callMetaCriticImageSpider(allDealsInDatabase):
     process.crawl(mainMetaCriticSpider)
     process.start()
 
-    #print(mainMetaCriticSpider.allDeals)
-    print(mainMetaCriticSpider.images)
-
     updateDatabaseWithImages(mainMetaCriticSpider.images)
 
 def updateDatabaseWithImages(images):
-
+    
+    # Could have a connection setup globally instead of locally?
     connection = pymysql.connect(host='localhost',
                                  user='root',
-                                 password='22ehH0C2!View2011!',
+                                 password='Password1',
                                  db='Game_Deals',
                                  charset='utf8mb4',
                                  cursorclass=pymysql.cursors.DictCursor)
@@ -53,8 +50,6 @@ def updateDatabaseWithImages(images):
     with connection.cursor() as cursor:
         for imageKey in images:
             updateStatement = f"UPDATE deals SET imageURL='{images[imageKey]}' WHERE metacriticURL='{imageKey}';"
-
-            #print(updateStatement)
 
             cursor.execute(updateStatement)
 
