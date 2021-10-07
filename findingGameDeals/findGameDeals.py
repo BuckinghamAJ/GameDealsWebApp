@@ -25,11 +25,9 @@ def main():
 
     videoGameDeals = placeAllDealsIntoOneDictionary(mainPSDeal.allDeals, mainXboxDeal.allDeals, mainSwitchDeal.allDeals)
 
-    print(videoGameDeals)
 
     videoGameDeals = createscrapyURLs(videoGameDeals)
 
-    print(videoGameDeals)
 
     placeInSQLDatabase(videoGameDeals)
 
@@ -107,6 +105,7 @@ def notalreadyAddedTitle(title, currentlyAddedTitles):
     if title.lower() in currentlyAddedTitles:
         return False, title
     else:
+        #Seeing how close the name matches since naming on different sites can be slightly different
         for addedTitle in currentlyAddedTitles:
             seq = difflib.SequenceMatcher(None, title.lower(), addedTitle.lower())
             ratio = seq.ratio()*100
@@ -117,10 +116,8 @@ def notalreadyAddedTitle(title, currentlyAddedTitles):
             if title_number != addedTitle_number:
                 continue
             else:
+                #  
                 if ratio >= 96:
-                    print(f"{title} is close enough to {addedTitle}")
-                    print(ratio)
-                    print()
                     return False, addedTitle
                 else:
                     continue
