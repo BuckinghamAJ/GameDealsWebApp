@@ -14,9 +14,8 @@ class SwitchDealSpider():
 
     def start_scrap(self):
         opts = Options()
-        #opts.headless = True
-        #assert opts.headless  # Operating in headless mode
-        #browser = Firefox(options=opts, executable_path="/usr/local/bin/geckodriver")
+        opts.headless = True
+        assert opts.headless  # Operating in headless mode
         browser = Firefox(executable_path="/usr/local/bin/geckodriver")
 
         self.parseSalesAndDealsPage(browser)
