@@ -27,7 +27,6 @@ class PSDealSpider(scrapy.Spider):
 
     def parse_PSDeals(self, response):
 
-        #cell_body = response.xpath('//div[contains(@class, "grid-cell__body")]')
         cell_game = response.xpath('//div[contains(@class, "grid-cell--game")]')
 
 
